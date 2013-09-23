@@ -1,0 +1,64 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'spm-chaos-build',
+1 verbose cli   '-g' ]
+2 info using npm@1.2.32
+3 info using node@v0.10.12
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Users\waynelu\AppData\Roaming\npm\package.json
+6 verbose read json C:\Users\waynelu\AppData\Roaming\npm\package.json
+7 verbose cache add [ 'spm-chaos-build', null ]
+8 verbose cache add name=undefined spec="spm-chaos-build" args=["spm-chaos-build",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'spm-chaos-build',
+9 verbose parsed url   path: 'spm-chaos-build',
+9 verbose parsed url   href: 'spm-chaos-build' }
+10 silly lockFile 767d3378-spm-chaos-build spm-chaos-build
+11 verbose lock spm-chaos-build C:\Users\waynelu\AppData\Roaming\npm-cache\767d3378-spm-chaos-build.lock
+12 silly lockFile 767d3378-spm-chaos-build spm-chaos-build
+13 silly lockFile 767d3378-spm-chaos-build spm-chaos-build
+14 verbose addNamed [ 'spm-chaos-build', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile 34bdd7b6-spm-chaos-build spm-chaos-build@
+17 verbose lock spm-chaos-build@ C:\Users\waynelu\AppData\Roaming\npm-cache\34bdd7b6-spm-chaos-build.lock
+18 silly addNameRange { name: 'spm-chaos-build', range: '', hasData: false }
+19 verbose url raw spm-chaos-build
+20 verbose url resolving [ 'https://registry.npmjs.org/', './spm-chaos-build' ]
+21 verbose url resolved https://registry.npmjs.org/spm-chaos-build
+22 info trying registry request attempt 1 at 10:20:32
+23 http GET https://registry.npmjs.org/spm-chaos-build
+24 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT
+25 info trying registry request attempt 2 at 10:21:03
+26 http GET https://registry.npmjs.org/spm-chaos-build
+27 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+28 info trying registry request attempt 3 at 10:22:13
+29 http GET https://registry.npmjs.org/spm-chaos-build
+30 silly lockFile 34bdd7b6-spm-chaos-build spm-chaos-build@
+31 silly lockFile 34bdd7b6-spm-chaos-build spm-chaos-build@
+32 error Error: tunneling socket could not be established, cause=Parse Error
+32 error     at ClientRequest.onError (C:\Program Files\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:159:17)
+32 error     at ClientRequest.g (events.js:175:14)
+32 error     at ClientRequest.EventEmitter.emit (events.js:95:17)
+32 error     at Socket.socketOnData (http.js:1558:9)
+32 error     at TCP.onread (net.js:525:27)
+33 error If you need help, you may report this log at:
+33 error     <http://github.com/isaacs/npm/issues>
+33 error or email it to:
+33 error     <npm-@googlegroups.com>
+34 error System Windows_NT 6.1.7600
+35 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "spm-chaos-build" "-g"
+36 error cwd F:\nginx-1.5.1\html\spm\static\hello
+37 error node -v v0.10.12
+38 error npm -v 1.2.32
+39 error code ECONNRESET
+40 verbose exit [ 1, true ]
