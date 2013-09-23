@@ -1,25 +1,5 @@
-# Examples for Sea.js
-
-<http://seajs.github.io/examples>
+# Examples for storeinc Sea pluin
 
 
-How to Build
-------------
 
-First, you should install `spm` and `spm-build`:
-
-```
-$ npm install spm -g
-$ npm install spm-build -g
-```
-
-Then, build it:
-
-```
-$ cd static/hello
-$ make build
-$ make deploy
-```
-
-Visit <http://docs.spmjs.org/> for detail information.
 
