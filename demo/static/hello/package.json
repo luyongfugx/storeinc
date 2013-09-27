@@ -1,8 +1,8 @@
 {
   "family": "examples",
   "name": "hello",
-  "lastversion":"1.0.5",
-  "version": "1.0.6",
+  "lastversion":"1.0.6",
+  "version": "1.0.7",
   "chunkSize":12,
   "spm": {
     "alias": {

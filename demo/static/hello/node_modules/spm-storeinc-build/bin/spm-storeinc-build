@@ -1,0 +1,50 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var runner = require('..');
+
+commander.usage('[options]');
+commander.version(require('../package').version);
+
+commander
+  .option('-I, --input-directory [dir]', 'input directory: [src]')
+  .option('-O, --output-directory [dir]', 'output directory: [dist]')
+  .option('-v, --verbose', 'show more logs')
+  .option('-q, --quiet', 'show less logs')
+  .option('-f, --force', 'force to build')
+  .option('--include [keyword]', 'include option for concat task: [relative]')
+  .option('--encoding [encoding]', 'file encoding: [utf8]')
+  .option('--no-color', 'disable colorful print');
+
+
+commander.on('--help', function() {
+  console.log();
+  console.log('  ' + 'Examples:'.bold.blue);
+  console.log();
+  console.log('   Build a standard cmd module is simple');
+  console.log();
+  console.log('   $ ' + 'spm build'.magenta);
+  console.log();
+  console.log('   Build from another source');
+  console.log();
+  console.log('   $ ' + 'spm build'.magenta + ' ' + '-I'.cyan + ' lib ' + '-O'.cyan + ' dist');
+  console.log();
+  console.log('   For more information: ' + 'http://docs.spmjs.org/en/build'.underline);
+  console.log();
+});
+
+
+commander.parse(process.argv);
+
+// run install
+console.log();
+var config = {};
+config.src = commander.inputDirectory;
+config.dest = commander.outputDirectory || 'dist';
+config.quiet = commander.quiet;
+config.force = commander.force;
+config.verbose = commander.verbose;
+config.include = commander.include;
+config.encoding = commander.encoding;
+config.color = commander.color;
+runner(config);
