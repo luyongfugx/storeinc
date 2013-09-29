@@ -2,10 +2,6 @@ package com.storeinc;
 
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
-
-
-
-
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -14,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.alibaba.fastjson.JSONObject;
 
 /**
- * 计算storeinc两个版本之间的增量文件
- * Servlet implementation class StoreIncServlet
+ * 计算storeinc两个版本之间的增量文件.
+ * Servlet implementation class StoreIncServlet.
  */
 public class StoreIncServlet extends HttpServlet {
 	//内容缓存
@@ -58,7 +54,7 @@ public class StoreIncServlet extends HttpServlet {
 		}
 		String[] urlArray=url.split("/");
 		int len=urlArray.length;
-	    String pathName="";
+		String pathName="";
 		String lastver="";
 		String ver="";
 		String jsFileName="";
