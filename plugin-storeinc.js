@@ -30,7 +30,7 @@ define('plugin-storeinc', [], function (require, exports) {
         return strResult;
     }
 
-    //获取js地址js地址，上个版本号，本次版本号,xxx.01-03.js
+    //获取js地址js地址，上个版本号，本次版本号,xxx.01_03.js
     function urlParse(url, ver, lastver, inc) {
         if (isAlia(url)) {
             return url
